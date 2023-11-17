@@ -74,7 +74,7 @@ Let us take a look how we can integrate wiremock with springboot to create a vir
     ```
 3. Create folder structure as highlighted below:
 
-    ![Directory Strucutre](_site/mycodethesaurus.github.io/assets/images/ServiceVirtualization/Project_Dir_Structure.jpg){: width="700" height="200" }
+    ![Directory Strucutre](mycodethesaurus.github.io/assets/images/ServiceVirtualization/Project_Dir_Structure.jpg){: width="700" height="200" }
 
     * Role of "/wiremock/__file" :
         It's used to save the ResponseDefinition.
