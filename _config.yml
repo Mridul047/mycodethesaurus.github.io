@@ -82,7 +82,7 @@ theme_mode:   # [light|dark]
 # img_cdn: 'https://github.com/Mridul047/mycodethesaurus.github.io/tree/main'
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://media.licdn.com/dms/image/D4D03AQHpNinQwo3Dng/profile-displayphoto-shrink_400_400/0/1667741655722?e=1678320000&v=beta&t=P154_vW37MK99wy0eqKWF01SZ1N4DWtOGDSf2C78Kng
+avatar: '/assets/IMG_20221024_133339_cropped.jpg'
 
 # boolean type, the global switch for ToC in posts.
 toc: true
