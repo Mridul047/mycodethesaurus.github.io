@@ -22,7 +22,7 @@ timezone: Asia/Kolkata
 
 title:  MyCodeThesaurus                          # the main title
 
-tagline: Doze Of Java   # it will display as the sub-title
+tagline: Tech Hours   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   A blog site for all stuff Java !
@@ -79,7 +79,7 @@ theme_mode:   # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn:
+img_cdn: 'https://media.licdn.com/dms/image/D4D03AQHY1SqXAeb…eta&t=GHf_Xrdf7p2zt21txByGNXbv_eSYp9luiSlqRKuJNCE'
 
 # the avatar on sidebar, support local or CORS resources
 avatar: https://media.licdn.com/dms/image/D4D03AQHpNinQwo3Dng/profile-displayphoto-shrink_400_400/0/1667741655722?e=1678320000&v=beta&t=P154_vW37MK99wy0eqKWF01SZ1N4DWtOGDSf2C78Kng
