@@ -5,8 +5,6 @@ categories: [java, spring security]
 tags: [java, spring security]
 ---
 
-# Exploring Spring Security Configuration
-
 ## Overview
 
 Having gained insights into the architecture of Spring Security for servlets, we now turn our attention to configuring Spring Security within a Spring Boot application.
