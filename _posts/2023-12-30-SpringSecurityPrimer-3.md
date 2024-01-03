@@ -39,6 +39,8 @@ Diverse implementations of `AuthenticationProvider` exist, with `DaoAuthenticati
 
 ## Authentication Flow using Spring Security
 
+![Spring security authN flow](/assets/images/SpringSecurity/SpringSecurityAuthNFlow.png){: width="700" height="200" }
+
 1. The initial request is processed by authentication filters, each handling the request based on the configured security strategy. For example, the `BasicAuthenticationFilter` processes requests with HTTP basic authentication.
 
 2. The authentication filter generates an authentication token from the incoming request.
