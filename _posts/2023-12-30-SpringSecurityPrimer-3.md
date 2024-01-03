@@ -11,6 +11,9 @@ In this post, we delve into the core aspects of Spring Security authentication w
 
 ## SecurityContextHolder
 
+![Security Context Holder Class](/assets/images/SpringSecurity/SecurityContextHolderClass.png)
+
+
 The `SecurityContextHolder` class serves as a repository for storing authenticated user information, encompassing the username, user authorities, and other identification details. It leverages a `ThreadLocal` by default, ensuring that the `SecurityContext` remains consistently accessible to methods within the same thread.
 
 ## SecurityContext
