@@ -64,6 +64,27 @@ In this post, we delve into the core aspects of unit testing using JUnit 5.
 5. **Balance Test Speed and Realism:**
    - Aim for a balance between test execution speed and realism to create efficient yet meaningful tests.
 
+
+## Junit 5 Architecture
+
+![Junit 5 Architecture](/assets/images/Junit/Junit5Architecture.png){: width="700" height="200" }
+
+Junit 5 is designed in moduler way that separates API, Execution engine, Execution, and Integration.
+
+Here are the three modules that make up the JUnit 5 framework:
+
+ - **JUnit Platform**: Provides an API for tools to discover and run tests. It defines an interface between JUnit and customers who want to run the tests from IDEs, build tools, or console.
+
+ - **JUnit Jupiter**: Provides an annotation-based API to write JUnit 5 unit tests, along with a test engine that lets you run them.
+
+ - **JUnit Vintage**: Offers a test engine to run JUnit 3 and JUnit 4 tests, thereby ensuring backward compatibility (with earlier versions of the JUnit framework).
+
+JUnit5 requires `minimum Java-8` to be installed on the system.
+
+The goal of this architecture is to separate the responsibilities of testing, execution, and extensions.
+Thus facilitating the integration of other test frameworks with the JUnit framework.
+
+
 ## Junit 5 Common Annotations
 
 All core annotations are located in `org.junit.jupiter.api` package in the `junit-jupiter-api` module.
@@ -89,7 +110,7 @@ This class provides overloaded static utility methods that are used for assertin
 
 ## Conventions for writing test methods in JUnit 5
 
-1. Method Signature:
+### Method Signature:
 
 Test methods must be annotated with `@Test`.
 They should be public, void-returning, and take no parameters.
@@ -101,7 +122,7 @@ public void myTestMethod() {
 }
 ```
 
-2. Test Names:
+### Test Names:
 
 Test method names should be descriptive, concise, and follow a consistent naming convention.
 Use camelCase or underscores to separate words.
@@ -113,7 +134,8 @@ public void calculateTotalCost() {
 }
 ```
 
-3. Assertions:
+### Assertions:
+
 Use JUnit's assertion methods for validating expected outcomes.
 Common assertion methods include assertEquals, assertTrue, assertFalse, etc. 
 
@@ -125,7 +147,7 @@ public void testAddition() {
 }
 ```
 
-4. Exception Testing:
+### Exception Testing:
 
 To test methods that are expected to throw exceptions, use the assertThrows method.
 
@@ -136,7 +158,7 @@ public void testDivisionByZero() {
 }
 ```
 
-5. Test Annotations:
+### Test Annotations:
 
 JUnit 5 provides various annotations to enhance test behavior, such as @BeforeEach, @AfterEach, @BeforeAll, and @AfterAll.
 
@@ -154,7 +176,7 @@ void tearDown() {
 }
 ```
 
-6. Test Groups and Tags:
+### Test Groups and Tags:
 
 Use @Tag to categorize tests and run specific groups of tests.
 Helpful for organizing and selectively running tests based on their characteristics.
@@ -168,7 +190,7 @@ void testIntegrationScenario() {
 ```
 
 
-7. Conditional Execution:
+### Conditional Execution:
 
 Use @Disabled to temporarily disable a test.
 Conditional test execution based on specific conditions can be achieved using @EnabledOnOs, @EnabledIfSystemProperty, etc.
@@ -181,7 +203,7 @@ void temporarilyDisabledTest() {
 }
 ```
 
-8. Parameterized Tests:
+### Parameterized Tests:
 
 JUnit 5 supports parameterized tests using @ParameterizedTest and various sources.
 Allows you to run the same test with different inputs.
