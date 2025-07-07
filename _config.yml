@@ -22,7 +22,7 @@ timezone: Asia/Kolkata
 
 title:  MyCodeThesaurus                          # the main title
 
-tagline: Tech Hours   # it will display as the sub-title
+#tagline: Tech Hours   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   A blog site for all stuff Java !
